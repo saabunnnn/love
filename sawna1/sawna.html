@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Will You Be My Valentine?</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: pink;
+        background-image: url('heart.png');
+        background-repeat: repeat;
+    }
+    .container {
+        margin-top: 100px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 18px;
+        margin: 10px;
+    }
+    .heart {
+        font-size: 30px;
+        color: red;
+    }
+    .small-heart {
+        font-size: 20px;
+        color: white;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Will You Be My Valentine?</h1>
+    <button id="yesBtn">Yes</button>
+    <button id="noBtn">No</button>
+</div>
+<div class="heart">❤️</div>
+<div class="small-heart">♥️</div>
+<script>
+    document.getElementById("yesBtn").addEventListener("click", function() {
+        window.location.href = "pinkheart.html";
+    });
+
+    document.getElementById("noBtn").addEventListener("click", function() {
+        window.location.href = "goback.html";
+    });
+</script>
+</body>
+</html>
+
